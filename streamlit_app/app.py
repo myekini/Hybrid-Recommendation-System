@@ -7,7 +7,7 @@ import requests
 st.set_page_config(page_title="🎬 Hybrid Recommender", layout="centered")
 
 # Optional: Allow API URL override from sidebar
-default_api_url = os.getenv("API_URL", "http://localhost:8000")
+default_api_url = os.getenv("API_URL", "https://hybrid-recommendation-system-tezda.streamlit.app/")
 api_url = st.sidebar.text_input("API URL", value=default_api_url)
 
 st.title("🎬 Personalized Video Recommender")
